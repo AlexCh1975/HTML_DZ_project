@@ -122,6 +122,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 97px;
+    margin-bottom: 97px;
 }
 
 .top__logo>a{
