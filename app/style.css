@@ -4,21 +4,92 @@
     text-decoration: none;
 }
 
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: Gilroy;
+}
+
+.center{
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
 .top{
     padding-bottom: 96px;
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
     margin-top: 40px;
+    font-weight: 600;
+}
+
+.header__logo{
+    display: block;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 26px;
+}
+
+.menu>a:hover{
+    color: #F25822; 
+}
+
+.header__link{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
 }
 
 .top__content{
+    display: flex;
+    gap: 41px;
     margin-top: 84px;
     margin-bottom: 162px;
 }
 
 .top__info-title{
+    display: flex;
     margin-bottom: 17px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.top__info-text{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #888888;
 }
 
 .top__info-btn{
@@ -32,14 +103,14 @@
     box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
     border-radius: 50px;
     border: none;
-    font-family: 'Gilroy-Bold';
+    font-weight: bold;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
 }
 
 .top__info-btn-video{
-    font-family: 'Gilroy-Bold';
+    font-weight: bold;
     font-size: 15px;
     line-height: 18px;
     color: #AAAAAA;
@@ -48,6 +119,12 @@
 }
 
 .top__logo{
+    display: flex;
+    justify-content: space-between;
     margin-top: 97px;
+}
+
+.top__logo>a{
+    display: block;
 }
 
