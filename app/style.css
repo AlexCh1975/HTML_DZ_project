@@ -90,6 +90,7 @@ body{
     line-height: 23px;
     font-weight: 500;
     color: #888888;
+    max-width: 466px;
 }
 
 .top__info-btn{
